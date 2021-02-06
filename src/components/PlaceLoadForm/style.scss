@@ -1,0 +1,306 @@
+.place-load-form{
+	background-color: #ffffff;
+	border: solid 2px #0A22391F;
+	border-radius: 6px;
+	padding: 20px 0 15px;
+	max-width: 576px;
+	margin: auto;
+	h2{
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		margin-top:0;
+		margin-bottom:30px;
+		position: relative;
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: -15px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 60px;
+			height: 3px;
+			background-color: #3054D6;
+		}
+	}
+}
+
+.input-control{
+	padding:15px 15px;
+}
+
+.input-control.amountInput{
+	position: relative;
+	display: block;
+	margin: auto;
+	padding: 15px 5px 5px;
+	max-width: 248px;
+	input{
+	width: 100%;
+    display: block;
+		font-size: 48px;
+		font-weight: 700;
+    color: #0D2D11;
+    text-align: center;
+    padding: 3px 3px 3px 12px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    position: relative;
+	}
+	span{
+		display: block;
+    position: absolute;
+    left: -6px;
+    top: 17px;
+    width: 26px;
+    z-index: 5;
+		img{
+			width: 100%;
+		}	
+	}
+
+	::placeholder {
+		color: #0D0D0F;
+		opacity:0.3; 
+		font-weight: 600;
+	}
+	:-ms-input-placeholder {
+	 color: #0D0D0F;
+	 opacity:0.3;
+	 font-weight: 600;
+	}
+	::-ms-input-placeholder { 
+	 color: #0D0D0F;
+	 opacity:0.3;
+	 font-weight: 600;
+	}
+
+}
+
+.cminput{
+	position:relative;
+	input{
+		border: solid 2px #E7EBEEB3;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #0A2239;
+    outline: none;
+    font-weight: 700;
+		&:focus{
+			border:solid 2px #3054D6;
+		}
+	}
+	label{
+		display: none;
+		color: #3054D6;
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    padding: 0 5px;
+    font-weight: 700;
+    background-color: #fff;
+	}
+	label.isFocused{
+		display: block;
+	}
+	::placeholder {
+		color: #0D0D0F;
+		opacity:0.5; 
+		font-weight: 600;
+	}
+	:-ms-input-placeholder {
+	 color: #0D0D0F;
+	 opacity:0.5;
+	 font-weight: 600;
+	}
+	::-ms-input-placeholder { 
+	 color: #0D0D0F;
+	 opacity:0.5;
+	 font-weight: 600;
+	}
+}
+
+.submitBtn{
+	padding: 25px 0 15px;
+	max-width: 576px;
+  margin: auto;
+	input{
+		background-color: #EDF0F7;
+		padding: 15px;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		width:100%;
+		box-sizing: border-box;
+		color: #bac9f8;
+		border: solid 2px #EDF0F7;
+		border-radius: 6px;
+		outline:none;
+		cursor: pointer;
+	}
+	input.button-enable{
+		background-color: #3054D6;
+		border:solid 2px #3054D6;
+		color: #FFFFFF;
+	}
+}
+
+.mobileInput{
+	input{
+		&:focus{
+			padding:15px 15px 15px 45px;
+		}
+	}
+	span{
+		position: absolute;
+    color: #0A2239;
+    font-size: 14px;
+    font-weight: 700;
+    top: 3px;
+    left: 30px;
+    display: none;
+    bottom: 0;
+    margin: auto;
+    width: 25px;
+    height: 19px;
+	}
+	span.isFocused{
+		display: block;
+	}
+}
+
+.priceTypeBox{
+	border-bottom: solid 1px #0A22391F;
+	padding: 5px 15px 25px 15px;
+	margin-bottom: 30px;
+}
+.pricetypeboxinner{
+	max-width: 226px;
+	margin: auto;
+	padding-right: 0px;
+}
+.amountTypesBtns{
+	position: relative;
+	display: inline-block;
+	height: 40px;
+}
+
+.priceTypeBox input[type="radio"]{
+ display: none;
+}
+
+.priceTypeBox input[type="radio"] + label{
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ line-height: 1em;
+ font-size:30px;
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index:1000;
+}
+
+.priceTypeBox input[type="radio"]+ span,
+.priceTypeBox input[type="radio"]+ span{
+	color: #0A2239;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+		line-height: 39px;
+		font-weight: 700;
+}
+.priceTypeBox {
+	.amountTypesBtns{
+		&:nth-child(1){
+			width:105px;
+			input[type="radio"]+ span{
+				width: 94px;
+			}
+			input[type="radio"]+ span:before,
+			input[type="radio"]+ span:after{
+				width: 94px;
+			}
+		}
+		&:nth-child(2){
+			width: 120px;
+			input[type="radio"]+ span{
+				width: 120px;
+			}
+			input[type="radio"]+ span:before,
+			input[type="radio"]+ span:after{
+				width: 117px;
+			}
+		}
+	}
+}
+
+.priceTypeBox input[type="radio"]+ span:before,
+.priceTypeBox input[type="radio"]+ span:after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 35px;
+ text-align: center;
+ color: white;
+ font-family: Times;
+ border-radius: 20px;
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ cursor: pointer;
+}
+.priceTypeBox input[type="radio"] + span:before {
+	-webkit-transition: all .3s ease;
+	transition: all 0.3s ease;
+	border: solid 2px #E7EBEE;
+	background-color: #f6f9fb80;
+}
+
+.priceTypeBox input[type="radio"] + span:hover:before {
+-webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ border: solid 2px #3054D6;
+ background-color: #3054D60F;
+}
+
+.priceTypeBox input[type="radio"] + span:hover{
+	-webkit-transition: all .3s ease;
+ transition: all .3s ease;
+	 color: #3054D6;
+}
+
+
+.priceTypeBox input[type="radio"]:checked + span:before {
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	border: solid 2px #3054D6;
+	background-color: #3054D60F;
+}
+
+
+
+.priceTypeBox input[type="radio"]:checked + span{
+	-webkit-transition: all .3s ease;
+ transition: all .3s ease;
+	color: #3054D6;
+}
+
+
+
+
+
+
+
